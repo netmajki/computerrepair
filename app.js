@@ -8,6 +8,7 @@ app.set('view engine', 'ejs');
 app.set('views','./views');
 
 app.use(morgan('dev'));
+app.use(express.static('public'));
 
 require("./routes.js")(app);
 
